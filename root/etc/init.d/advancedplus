@@ -219,7 +219,7 @@ advancedset(){
     # set_firewall_wan
     tsoset
     sed -i "\/bin\/zsh/d" /etc/profile
-    [ "x$(uci -q get advancedplus.@basic[0].usshmenu)" = "x1" ] || echo '/usr/bin/zsh'  >> /etc/profile
+    [ "x$(uci -q get advancedplus.@basic[1].usshmenu)" = "x1" ] || echo '/usr/bin/zsh'  >> /etc/profile
 }
 
 kucatset(){
